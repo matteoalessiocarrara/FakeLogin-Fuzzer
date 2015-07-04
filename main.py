@@ -24,8 +24,9 @@ import sys
 if (len(sys.argv)<3):
 	print "Uso: ff fakelogin_root_url nome1 [nome2 nome3 ... nomen]"
 	exit(1)
+
 import requests
-print "Avvio ricerca in", sys.argv[1]+",", str(len(sys.argv[2:])), "nomi di file\n"
+
 for i in sys.argv[2:]:
-	resp = requests.head(sys.argv[1]+i)
-	print sys.argv[1]+i, resp.status_code
+	print sys.argv[1]+i, requests.head(sys.argv[1]+i).status_code
+exit(0)

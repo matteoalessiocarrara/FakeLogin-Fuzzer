@@ -19,14 +19,16 @@
 #  MA 02110-1301, USA.
 #
 
-import sys
+from sys import argv
+import requests
 
-if (len(sys.argv)<3):
+
+if len(argv) < 3:
 	print "Uso: ff fakelogin_root_url nome1 [nome2 nome3 ... nomen]"
 	exit(1)
 
-import requests
+url = argv[1]
 
-for i in sys.argv[2:]:
-	print sys.argv[1]+i, requests.head(sys.argv[1]+i).status_code
+for nome in argv[2:]:
+	print requests.head(url+nome).status_code, nome 
 exit(0)

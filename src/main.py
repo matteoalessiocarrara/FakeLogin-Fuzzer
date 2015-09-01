@@ -24,11 +24,11 @@ import requests
 
 
 if len(argv) < 3:
-	print "Uso: ff fakelogin_root_url nome1 [nome2 nome3 ... nomen]"
-	exit(1)
+	exit("Uso: "+argv[0]+" fakelogin_root_url nome1 [nome2 nome3 ... nomen]")
 
 url = argv[1]
 
 for nome in argv[2:]:
 	print requests.head(url+nome).status_code, nome 
+
 exit(0)

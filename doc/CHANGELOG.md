@@ -1,3 +1,11 @@
+2/9/2015
+--------
+ - Stampa errori su stderr
+
+2/8/2015
+--------
+ - Codice e output più leggibili
+
 4/7/2015
 --------
  - Migliorati i return

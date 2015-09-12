@@ -22,11 +22,13 @@
 from sys import argv
 import requests
 
+nomesw = argv[0]
 
 if len(argv) < 3:
-	exit("Uso: "+argv[0]+" fakelogin_root_url nome1 [nome2 nome3 ... nomen]")
+	exit("Uso: "+nomesw+" fakelogin_root_url nome1 [nome2 nome3 ... nomen]")
 
 url = argv[1]
-for nome in argv[2:]:
-	print requests.head(url+nome).status_code, nome 
-exit()
+
+for nomefile in argv[2:]:
+	print requests.head(url+nomefile).status_code, nomefile
+

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#  
+#
 #  Copyright 2015 Matteo Alessio Carrara <sw.matteoac@gmail.com>
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -31,4 +31,3 @@ url = argv[1]
 
 for nomefile in argv[2:]:
 	print requests.head(url + nomefile).status_code, nomefile
-

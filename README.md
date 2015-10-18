@@ -13,7 +13,7 @@ ff fakelogin_root_url nome1 [nome2 nome3 ... nomen]
 
 ## Funzionamento ##
 
-FakeLogin-Fuzzer (ff) prende la root del fake login, aggiunge alla fine il nome di un possibile file e invia al server una richiesta http HEAD; quindi stampa la risposta.		
+FakeLogin-Fuzzer (ff) prende la root del fake login, aggiunge alla fine il nome di un possibile file e invia al server una richiesta http HEAD; quindi stampa il codice HTTP ricevuto.	
 
 ## Miglioramenti di input/output ##
 

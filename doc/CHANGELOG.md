@@ -1,3 +1,7 @@
+18/10/2015
+----------
+ - Codice migliorato
+
 2/9/2015
 --------
  - Stampa errori su stderr

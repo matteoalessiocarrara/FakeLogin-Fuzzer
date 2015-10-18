@@ -25,10 +25,10 @@ import requests
 nomesw = argv[0]
 
 if len(argv) < 3:
-	exit("Uso: "+nomesw+" fakelogin_root_url nome1 [nome2 nome3 ... nomen]")
+	exit("Uso: " + nomesw + " fakelogin_root_url nome1 [nome2 nome3 ... nomen]")
 
 url = argv[1]
 
 for nomefile in argv[2:]:
-	print requests.head(url+nomefile).status_code, nomefile
+	print requests.head(url + nomefile).status_code, nomefile
 
